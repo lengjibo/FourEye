@@ -26,8 +26,11 @@
 推荐使用kali linux系统安装,后期会考虑增加docker部署，或增加setup脚本。
 
 > git clone https://github.com/lengjibo/FourEye.git
+
 > cd FourEye
+
 > pip install -r requirements.txt
+
 > python3 BypassFramework.py
 
 **因为是linux下编译，所以编译文件会有体积大的问题，该工具为三天内的产物，可能有不少bug，欢迎在issus处与我反馈**
