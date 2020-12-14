@@ -4,6 +4,8 @@ from termcolor import colored
 import os
 
 
+
+
 oct_commands = ["exe","shellcode","list","back","help","exit"]
 shellcode_commands = ["xor","rot13","list","execute","png","exit","back"]
 
@@ -55,6 +57,8 @@ def shellcode2_execute():
     except:
         print(colored("[-]error\n","cyan"))
 
+
+
 def banner():
     version = '\33[43m V1.0 Beta \033[0m'
     Yellow = '\33[33m'
@@ -73,7 +77,7 @@ def banner():
                                  \|   
 {1}
 
-                    {3}v1.0 stable !{1}
+                    {3}v1.5 stable !{1}
                     {3}author lengyi@HongHuSec Lab !{1}
 
 {2} FourEye BypassFrameWork | BypassAV your shellcode && exe {1}

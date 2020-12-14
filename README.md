@@ -12,7 +12,7 @@
                                  \|   
 
 
-                    v1.0 stable !
+                    v1.5 stable !
                     author lengyi@HongHuSec Lab !
 
  FourEye BypassFrameWork | BypassAV your shellcode && exe 
@@ -46,8 +46,12 @@ https://www.bilibili.com/video/BV1zy4y1S7ZM/
 
 大多数方法均为网上已经公开的方法，本人只是对其整合、优化，多来自于ired，感谢其分享精神。
 
+## update
+
+12.14：增加其对exe的免杀，方法参考@bats3c
+
 ## TODO
 
 - 增加更多的免杀、shellcode加密方法
-- 增加直接对exe进行免杀
+
 

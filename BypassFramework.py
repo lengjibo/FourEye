@@ -1,14 +1,12 @@
 #!/usr/bin/python
 
-from termcolor import colored
-import os
-import logging
-import sys
 from core.functions import *
 import readline
 from module.memory.CreateFiber import *
 from module.memory.QueueUserAPC import *
 from module.Separation.imageShell import *
+from module.darkexe.darkexe import *
+from termcolor import colored
 
 python_version = sys.version_info[0]
 
@@ -33,6 +31,11 @@ while True:
 
         if command == "help":
             help()
+
+        if command.split(" ")[0] == "exe":
+            shellcode_add = input("\033[4mPlease input Your exe:\033[0m" + colored(" >>", "green"))
+            darkarmour = Darkexe()
+            darkarmour.run(args=shellcode_add)
 
         if command.split(" ")[0] == "shellcode":
             readline.set_completer(shellcode_completer)
