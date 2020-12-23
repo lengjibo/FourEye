@@ -48,7 +48,8 @@ https://www.bilibili.com/video/BV1zy4y1S7ZM/
 
 ## update
 
-12.14：增加其对exe的免杀，方法参考@bats3c
+12.14：增加其对exe的免杀，方法参考@bats3c，若使用报错请安装x86_64-w64-mingw32-gcc
+
 
 ## TODO
 
