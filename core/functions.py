@@ -41,22 +41,37 @@ def help():
     print(colored("exit \t\t\t\texit current session","blue"))
     print(colored("list \t\t\t\tlist current menu all features","blue"))
 
-def shellcode_execute():
+def x64cpp_execute():
     try:
-        os.system('i686-w64-mingw32-g++ ' + '/root/shellcode.cpp' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
+        os.system('x86_64-w64-mingw32-g++ ' + '/root/shellcode.cpp' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
         os.system('rm -rf ' + '/root/shellcode.cpp')
         print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
     except:
         print(colored("[-]error\n","cyan"))
 
-def shellcode2_execute():
+def x86cpp_execute():
     try:
-        os.system('i686-w64-mingw32-gcc ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
+        os.system('i686-w64-mingw32-g++ ' + '-m32 ' + '/root/shellcode.cpp' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
+        os.system('rm -rf ' + '/root/shellcode.cpp')
+        print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
+    except:
+        print(colored("[-]error\n","cyan"))
+
+def x64c_execute():
+    try:
+        os.system('x86_64-w64-mingw32-gcc ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
         os.system('rm -rf '+ '/root/shellcode.c')
         print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
     except:
         print(colored("[-]error\n","cyan"))
 
+def x86c_execute():
+    try:
+        os.system('i686-w64-mingw32-gcc ' + '-m32 ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
+        os.system('rm -rf '+ '/root/shellcode.c')
+        print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
+    except:
+        print(colored("[-]error\n","cyan"))
 
 
 def banner():

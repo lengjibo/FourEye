@@ -40,7 +40,7 @@ def rot_compailed(shellcode_size, shellcode):
     '''
 
     loads = load.replace('default_shell[]', shellcode, 1)
-    with open('/root/shellcode.cpp', 'w+') as f:
+    with open('/root/shellcode.c', 'w+') as f:
         f.write(loads)
 
 
