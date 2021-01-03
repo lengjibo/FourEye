@@ -92,7 +92,7 @@ def banner():
                                  \|   
 {1}
 
-                    {3}v1.5 stable !{1}
+                    {3}v1.6 stable !{1}
                     {3}author lengyi@HongHuSec Lab !{1}
 
 {2} FourEye BypassFrameWork | BypassAV your shellcode && exe {1}
