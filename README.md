@@ -38,9 +38,40 @@
 
 ## 使用方法
 
-时间原因，录了一个小demo。已上传至B站。
+### shellcode
+
+> python3 BypassFramework.py
+
+![image](image/1.png)
+
+> 选择shellcode
+
+![image](image/2.png)
+
+> 选择免杀方式，1：Fiber、2：APC、3：图片分离，选择加密方式，xor或者rot13，然后输入shellcode，选择位数，x64或者x86
+
+![image](image/3.png)
+
+> 执行execute
+
+![image](image/4.png)
+
+
+### exe
+
+> 选择exe，然后输入exe即可
+
+
+![image](image/5.png)
+
+
+### demo。已上传至B站。
 
 https://www.bilibili.com/video/BV1zy4y1S7ZM/
+
+https://www.bilibili.com/video/BV1Sh411Z7qc
+
+https://www.bilibili.com/video/BV1b54y1x7RT
 
 ## 引用
 
@@ -49,7 +80,6 @@ https://www.bilibili.com/video/BV1zy4y1S7ZM/
 ## update
 
 2020.12.14：增加其对exe的免杀，方法参考@bats3c，若使用报错请安装x86_64-w64-mingw32-gcc
-
 2021.01.03: 增加x86、x64的支持
 
 
