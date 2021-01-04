@@ -42,19 +42,19 @@
 
 > python3 BypassFramework.py
 
-![image](image/1.png)
+![image](https://raw.githubusercontent.com/lengjibo/FourEye/main/image/1.png)
 
 > 选择shellcode
 
-![image](image/2.png)
+![image](https://raw.githubusercontent.com/lengjibo/FourEye/main/image/2.png)
 
 > 选择免杀方式，1：Fiber、2：APC、3：图片分离，选择加密方式，xor或者rot13，然后输入shellcode，选择位数，x64或者x86
 
-![image](image/3.png)
+![image](https://raw.githubusercontent.com/lengjibo/FourEye/main/image/3.png)
 
 > 执行execute
 
-![image](image/4.png)
+![image](https://raw.githubusercontent.com/lengjibo/FourEye/main/image/4.png)
 
 
 ### exe
@@ -62,7 +62,7 @@
 > 选择exe，然后输入exe即可
 
 
-![image](image/5.png)
+![image](https://raw.githubusercontent.com/lengjibo/FourEye/main/image/5.png)
 
 
 ### demo。已上传至B站。
