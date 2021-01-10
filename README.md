@@ -12,7 +12,7 @@
                                  \|   
 
 
-                    v1.6 stable !
+                    v1.7 stable !
                     author lengyi@HongHuSec Lab !
 
  FourEye BypassFrameWork | BypassAV your shellcode && exe 
