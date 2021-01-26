@@ -24,7 +24,7 @@
 ## 安装方法
 
 推荐使用kali linux系统安装,若缺少环境，请安装Mingw环境,后期会考虑增加docker部署，或增加setup脚本。
-
+* Windows  
 > git clone https://github.com/lengjibo/FourEye.git
 
 > cd FourEye
@@ -33,8 +33,9 @@
 
 > python3 BypassFramework.py
 
-Linux遇到`sh: 1: i686-w64-mingw32-g++: not found`需要安装以下依赖  
-> sudo apt-get install mingw-w64
+* Linux  
+> chmod 775 setup.sh  
+> ./setup.sh  
 
 
 **因为是linux下编译，所以编译文件会有体积大的问题，该工具为三天内的产物，可能有不少bug，欢迎在issus处与我反馈**
