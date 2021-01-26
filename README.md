@@ -88,7 +88,7 @@ https://www.bilibili.com/video/BV1b54y1x7RT
 
 2021.01.09: 隐藏窗口
 
-2021.01.26: 增加UUID免杀方法
+2021.01.26: 增加UUID免杀方法，修复部分bug
 
 
 ## TODO
