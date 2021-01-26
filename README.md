@@ -23,18 +23,18 @@
 
 ## 安装方法
 
-推荐使用kali linux系统安装,若缺少环境，请安装Mingw环境,后期会考虑增加docker部署，或增加setup脚本。
+推荐使用kali linux系统安装,若缺少环境，请安装Mingw环境,后期会考虑增加docker部署.
 
 > git clone https://github.com/lengjibo/FourEye.git
 
 > cd FourEye
 
-> pip install -r requirements.txt
+> chmod 755 setup.sh 
+
+> ./setup.sh
 
 > python3 BypassFramework.py
 
-Linux遇到`sh: 1: i686-w64-mingw32-g++: not found`需要安装以下依赖  
-> sudo apt-get install mingw-w64
 
 **因为是linux下编译，所以编译文件会有体积大的问题，该工具为三天内的产物，可能有不少bug，欢迎在issus处与我反馈**
 
@@ -88,7 +88,7 @@ https://www.bilibili.com/video/BV1b54y1x7RT
 
 2021.01.09: 隐藏窗口
 
-2021.01.26: 增加UUID免杀方法，修复部分bug
+2021.01.26: 增加UUID免杀方法，修复部分bug,增加安装脚本@zhzyker
 
 
 ## TODO
