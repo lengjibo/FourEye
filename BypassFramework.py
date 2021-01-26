@@ -3,6 +3,7 @@
 from core.functions import *
 import readline
 from module.memory.CreateFiber import *
+from module.UUID.UUID_bypass import *
 from module.memory.QueueUserAPC import *
 from module.Separation.imageShell import *
 from module.darkexe.darkexe import *
@@ -122,6 +123,29 @@ while True:
                                     break
                             except EOFError:
                                 print(" ")
+                    if exe_command.strip(" ")[0] == "4":
+                        while True:
+                            try:
+                                bypass4_command = input("\033[4mFourEye(shellcode_bypass4)\033[0m" + colored(" >>", "green"))
+                                if bypass4_command == "UUID":
+                                    UUIDSehllcode()
+                                if bypass4_command == "x86":
+                                    flag = 1
+                                if bypass4_command == "x64":
+                                    flag = 2
+                                if bypass4_command == "execute":
+                                    if flag == 1:
+                                        x86_uuid_execute()
+                                    elif flag == 2:
+                                        x64_uuid_execute()
+                                if bypass4_command == "exit":
+                                    sys.exit()
+                                if bypass4_command == "back":
+                                    break
+
+                            except EOFError:
+                                print(" ")
+
 
                 except EOFError:
                     print(" ")

@@ -12,7 +12,7 @@
                                  \|   
 
 
-                    v1.7 stable !
+                    v1.8 stable !
                     author lengyi@HongHuSec Lab !
 
  FourEye BypassFrameWork | BypassAV your shellcode && exe 
@@ -87,6 +87,8 @@ https://www.bilibili.com/video/BV1b54y1x7RT
 2021.01.03: 增加x86、x64的支持
 
 2021.01.09: 隐藏窗口
+
+2021.01.26: 增加UUID免杀方法
 
 
 ## TODO

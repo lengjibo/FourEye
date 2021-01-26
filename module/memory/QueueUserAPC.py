@@ -22,7 +22,7 @@ def rot_compailed(shellcode_size, shellcode):
             
             for (int i = 0; i < sizeof default_shell; i++)
             {
-                default_shell[i] = default_shell[i] - 13;
+                default_shell[i] = default_shell[i] - 9;
             }
             
             shellcode = default_shell;
@@ -97,7 +97,7 @@ def Queue_rot_13():
                 code = f.read(1)
                 if not code:
                     break
-                base10 = ord(code) + 0x0D
+                base10 = ord(code) + 0x09
                 code_hex = hex(base10)
                 code_hex = code_hex.replace('0x', '')
 

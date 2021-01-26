@@ -32,6 +32,7 @@ def bypass_list():
     print(colored("[+] BypassAV1：Shellcode Launcher using Fibers", "red"))
     print(colored("[+] BypassAV2：Shellcode Launcher using QueueUserAPC", "red"))
     print(colored("[+] BypassAV3：Shellcode Launcher using PNG", "red"))
+    print(colored("[+] BypassAV4：Shellcode Launcher using UUID", "red"))
 
 def help():
     print(colored("Available commands to use :\n","cyan"))
@@ -60,7 +61,7 @@ def x86cpp_execute():
 def x64c_execute():
     try:
         os.system('x86_64-w64-mingw32-gcc ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w")
-        os.system('rm -rf '+ '/root/shellcode.c')
+        #os.system('rm -rf '+ '/root/shellcode.c')
         print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
     except:
         print(colored("[-]error\n","cyan"))
@@ -73,9 +74,24 @@ def x86c_execute():
     except:
         print(colored("[-]error\n","cyan"))
 
+def x86_uuid_execute():
+    try:
+        os.system('x86_64-w64-mingw32-gcc ' + '-m32 ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " --static" + " -w" + " -lrpcrt4")
+        os.system('rm -rf '+ '/root/shellcode.c')
+        print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
+    except:
+        print(colored("[-]error\n","cyan"))
+
+def x64_uuid_execute():
+    try:
+        os.system('x86_64-w64-mingw32-gcc ' + '/root/shellcode.c' + ' -o ' + '/root/shellcode.exe' + " -lrpcrt4" + " --static" + " -w")
+        os.system('rm -rf '+ '/root/shellcode.c')
+        print(colored("[+]shellcode compoile at /root/shellcode.exe\n","cyan"))
+    except:
+        print(colored("[-]error\n","cyan"))
 
 def banner():
-    version = '\33[43m V1.0 Beta \033[0m'
+    version = '\33[43m V1.8 Beta \033[0m'
     Yellow = '\33[33m'
     OKGREEN = '\033[92m'
     CRED = '\033[91m'
@@ -92,7 +108,7 @@ def banner():
                                  \|   
 {1}
 
-                    {3}v1.7 stable !{1}
+                    {3}v1.8 stable !{1}
                     {3}author lengyi@HongHuSec Lab !{1}
 
 {2} FourEye BypassFrameWork | BypassAV your shellcode && exe {1}

