@@ -23,7 +23,7 @@
 
 ## 安装方法
 
-推荐使用kali linux系统安装,若缺少环境，请安装Mingw环境,后期会考虑增加docker部署.
+推荐使用kali linux系统安装.
 
 > git clone https://github.com/lengjibo/FourEye.git
 
