@@ -14,7 +14,7 @@ def imageSehllcode():
         
         
         int main(){
-        
+            FreeConsole();
             FILE* fp;
             size_t size;
             unsigned char* buffer;
