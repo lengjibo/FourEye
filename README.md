@@ -82,6 +82,8 @@ https://www.bilibili.com/video/BV1b54y1x7RT
 
 ## update
 
+2020.2.03: 火绒已对其标记，且用且珍惜
+
 2020.12.14：增加其对exe的免杀，方法参考@bats3c，若使用报错请安装x86_64-w64-mingw32-gcc
 
 2021.01.03: 增加x86、x64的支持
