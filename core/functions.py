@@ -109,8 +109,7 @@ def banner():
 {1}
 
                     {3}v1.8 stable !{1}
-                    {3}author lengyi@HongHuSec Lab !{1}
-
+                    
 {2} FourEye BypassFrameWork | BypassAV your shellcode && exe {1}
     '''
     print((title.format(CRED, ENDC, OKGREEN, Yellow)))
